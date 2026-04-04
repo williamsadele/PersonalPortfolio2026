@@ -421,6 +421,33 @@ body {
   color: var(--text-light);
 }
 
+@media (min-width: 768px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .hero__identity {
+    grid-column: 1 / -1;
+  }
+
+  .hero__cta {
+    grid-column: 1 / -1;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .photo-card {
+    width: 100%;
+    min-height: 300px;
+  }
+}
 
 @media (max-width: 400px) {
   :root {
