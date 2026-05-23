@@ -415,10 +415,25 @@ body {
   padding: 24px 0 32px;
   margin-top: 16px;
 }
-
+.footer-left {
+  display: flex;
+  gap: 8px;
+}
 .footer__copy {
   font-size: 12px;
   color: var(--text-light);
+}
+.footer-icons{
+  display: flex;
+  gap: 8px;
+}
+.footer-icons a {
+  color: var(--accent);
+  font-size: 14px;
+  transition: opacity 0.2s;
+}
+.footer-icons a:hover {
+  opacity: 0.5;
 }
 
 @media (min-width: 768px) {
